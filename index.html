@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 </head>
 <body>
-   <div class="navbar">
-        <div class="head">SOPHIA GAIL SANTOS</div>
-           <ul>
-             <li><a href="#">Home</a></li>
-             <li><a href="#">Projects</a></li>
-             <li><a href="#">Resume</a></li>
-             <li><a href="#">Contacts</a></li>
-          </ul>
+
+  <div id="navbar">
+    <a class="head" href="#banner">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contacts">Contact</a>
+    <div class="name">
+      <h1>Sophia Gail Santos</h1>
+    </div>
+  </div>
+
+  <main>
+    <div class="banner" id="banner">
+      <div class="bannerletter">
+        <div class="banner-left">
+          <div class="center">
+            <h1>Hey there! I'm Sophia.</h1>
+          </div>
+          <h3>I turn ideas into standout websites.</h3>
+        </div>
+        <div class="banner-right">
+          <img src="pic.jpg" alt="Profile Image"/>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="about">
+    <div class="textabout">
+       <h1>A LITTLE ABOUT ME</h1>
+    </div>
+    <div class="infome">
+      <p>Hi, I'm a passionate web developer with a strong focus on creating clean, responsive, and user-friendly websites. I enjoy turning ideas into functional digital experiences using HTML, CSS, JavaScript, and modern frameworks. Whether it's building from scratch or improving existing sites, I’m always driven to write efficient code and deliver great user experiences.
+      <br><br> I’m constantly learning new technologies to stay up to date in the ever-evolving world of web development. From front-end design to back-end logic, I take pride in every step of the development process. My goal is to build websites that not only look good but also perform well across all devices and platforms.
+      </p>
+      <h1>MY SKILLS:</h1>
+      <div class="language">
+        <img src="html.webp" alt="">
+        <img src="css.png" alt="">
+        <img src="java.png" alt="">
+        <img src="Mysql.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="school">
+    <div class="education-section">
+      <img src="educlogo.png" class="edu-icon">
+      <h1>EDUCATION</h1>
     </div>
 
-   <main>
-        <div class="banner">
-            <div class="bannerletter">
-                
-                <div class="banner-left">
-                    <div class="center"><h1>Hey there! I'm Sophia.</h1></div>
-                        <h3>I turn ideas into standout websites.</h3>
-                    <button class="button button1">Check out my works!</button>
-                </div>
+    <div class="content-row">
+      <div class="education">
+        <div class="educ1"> 
+          <h1>High School</h1>
+          <div class="infoeduc">
+            <h2>San Lorenzo Ruiz Senior High School</h2>
+            <h3>2020–2023</h3>
+          </div>
+        </div>
 
-                <div class="banner-right">
-                    <img src="pic.jpg"/>
-                </div>
-            </div>
+        <div class="educ3">
+          <h1>College</h1>
+          <div class="collegeeduc">
+            <h2>STI - Ortigas Cainta</h2>
+            <h3>2023–Present</h3>
+          </div>
         </div>
-    </main>
-    <div class="proj">
-        <div class="education-section">
-            <img src="educlogo.png" alt="Education Icon" class="edu-icon">
-            <h1>EDUCATION</h1>
-         </div>
-        <div class="educ1 educ2">
-                <h1>High School Certificate</h1>
-                <h2>2019-2020</h2>
-                <div class="educ3 educ4">
-                <h1>Bachelor in Science of Computer Science</h1>
-                <h2>2019-2024</h2>
-                </div>
-        </div>
+      </div>
     </div>
+  </div>
+   
+  <div id="projects">
+      <h1>PROJECTS: </h1>
+        <div class="left">
+          <img src="proj1.png" class="proj1">
+        </div>
+        <div class="right">
+          <img src="proj1.png" class="proj1">
+        </div>
+  </div>
 
-
-    </body>
+    <div id="contacts">
+        <h1>CONTACTS:</h1>
+          <form action="/action_page.php">
+        <label for="fname">Name: </label>
+        <input type="text" id="name1" name="name" >
+        <br>
+        <label for="email">Email: </label>
+        <input type="text" id="email1" name="email" placeholder="@gmail.com">
+        <br>
+        <label for="email">Message:</label>
+        <br>
+        <textarea id="Message" name="message" rows="4" cols="50"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+</body>
 </html>
