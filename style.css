@@ -60,13 +60,6 @@ body {
   flex-direction: column;
 }
 
-@media screen and (min-width:768px) {
-  .bannerletter {
-    flex-direction: row; 
-    justify-content: space-between;
-  }
-}
-
 .banner-left {
   flex: 1;
   color: white;
@@ -103,7 +96,7 @@ body {
   border-right: .15em solid #f568ca;
   white-space: nowrap;
   margin: 0 auto;
-  letter-spacing: .10em;
+  letter-spacing: .50em;
   animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
 
@@ -115,6 +108,13 @@ body {
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #f568ca; }
+}
+
+@media screen and (min-width:768px) {
+  .bannerletter {
+    flex-direction: row; 
+    justify-content: space-between;
+  }
 }
 
 #about {
@@ -179,7 +179,7 @@ body {
 }
 
 .edu-icon {
-  width: 20%;
+  width: 10%;
   height: auto;
 }
 
@@ -333,13 +333,13 @@ body {
 }
 
 #contacts {
-  height: 71vh;
+  height: 120vh;
   background-color: #161535;
   font-size: 20px;
   color: #dfdddd;
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -353,12 +353,11 @@ body {
 
 #contacts h1 {
   color: aliceblue;
-  margin-left: 3%;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 input[type=text], select {
-  width: 70%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-flex;
@@ -369,7 +368,7 @@ input[type=text], select {
 }
 
 input[type=submit] {
-  width: 50%;
+  width: 30%;
   background-color: #ab47a2;
   color: white;
   padding: 10px 15px;
@@ -383,22 +382,8 @@ input[type=submit]:hover {
   background-color: #7840bc;
 }
 
-form {
-  margin-left: 5%;
-}
-
 textarea {
   resize: none;
-  width: 70%;
+  width: 100%;
 }
 
-footer{
-  background-color: white;
-  height: 5vh;
-  display: flex;
-  justify-content: center;
-}
-
-.footerlink{
-  
-}
